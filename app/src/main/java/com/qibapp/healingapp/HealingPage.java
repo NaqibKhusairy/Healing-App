@@ -73,6 +73,7 @@ public class HealingPage extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     private void explainbi() {
+        bahasa = "bi";
         bi.setVisibility(View.VISIBLE);
         bm.setVisibility(View.GONE);
         Map.setText("CLICK TO SEACH HEALING PLACE NEAR YOU");
@@ -83,6 +84,7 @@ public class HealingPage extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     private void explainbm() {
+        bahasa = "bm";
         bi.setVisibility(View.GONE);
         bm.setVisibility(View.VISIBLE);
         Map.setText("KLIK UNTUK MENCARI TEMPAT HEALING BERHAMPIRAN ANDA");
