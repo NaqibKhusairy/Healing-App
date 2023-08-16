@@ -13,8 +13,8 @@ import android.widget.Toast;
 
 public class HealingPage extends AppCompatActivity {
     Button Map,Healing;
-    ImageView bm,bi;
-    String bahasa,seach,url,toastmap,toasthealing;
+    ImageView bm,bi,back;
+    String bahasa,seach,url,toastmap,toasthealing,toastBack;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -25,6 +25,7 @@ public class HealingPage extends AppCompatActivity {
         Healing = findViewById(R.id.button2);
         bm = findViewById(R.id.ivbm);
         bi = findViewById(R.id.ivbi);
+        back = findViewById(R.id.ivback);
 
         bahasa=getIntent().getStringExtra("bahasa");
 
@@ -69,6 +70,14 @@ public class HealingPage extends AppCompatActivity {
                 explainbi();
             }
         });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent healing = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(healing);
+                Toast.makeText(getApplicationContext(), toastBack, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @SuppressLint("SetTextI18n")
@@ -80,6 +89,7 @@ public class HealingPage extends AppCompatActivity {
         Healing.setText("CLICK TO READ RANDOM HEALING QUOTES");
         toastmap = "Happy Finding Healing Place Near You";
         toasthealing = "Happy Reading The Random Healing Quotes";
+        toastBack = "Thank you For Using Healing App";
     }
 
     @SuppressLint("SetTextI18n")
@@ -91,5 +101,6 @@ public class HealingPage extends AppCompatActivity {
         Healing.setText("KLIK UNTUK MEMBACA QUOTE - QOUTE HEALING SECARA RAWAK");
         toastmap = "Selamat Mencari Tempat Healing Berhampiran Anda";
         toasthealing = "Selamat Membaca Random Quotes Healing";
+        toastBack = "Terima Kasih Kerana Menggunakan Healing App";
     }
 }

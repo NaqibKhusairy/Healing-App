@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView bm,bi;
     TextView textView,penerangn;
     Button Start;
-    String toast,bahasa;
+    String toast,bahasa,Page;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -30,10 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
         bahasa = "bi";
         toast = "Welcome to Healing App\nHappy read the quotes and happy healing";
+        Page = "main";
 
         bi.setVisibility(View.VISIBLE);
         bm.setVisibility(View.GONE);
-        explainbi();
+
+        if(bahasa.equals("bi"))
+        {
+            explainbi();
+        } else if (bahasa.equals("bm"))
+        {
+            explainbm();
+        }
 
         bi.setOnClickListener(new View.OnClickListener() {
             @Override
