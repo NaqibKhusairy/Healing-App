@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView bm,bi;
     TextView textView,penerangn;
     Button Start;
-    String toast;
+    String toast,bahasa;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         Start = findViewById(R.id.button);
         bm = findViewById(R.id.ivbm);
         bi = findViewById(R.id.ivbi);
+
+        bahasa = "bi";
         toast = "Welcome to Healing App\nHappy read the quotes and happy healing";
 
         bi.setVisibility(View.VISIBLE);
@@ -49,16 +51,18 @@ public class MainActivity extends AppCompatActivity {
         Start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), toast, Toast.LENGTH_LONG).show();
-                Intent i= new Intent(getApplicationContext(),AyatHealing.class);
+                Intent i= new Intent(getApplicationContext(),HealingPage.class);
+                i.putExtra("bahasa",bahasa);
                 startActivity(i);
+                Toast.makeText(getApplicationContext(), toast, Toast.LENGTH_LONG).show();
             }
         });
     }
 
     @SuppressLint("SetTextI18n")
     private void explainbi() {
-        penerangn.setText("This App is use to show random healing sentences");
+        bahasa = "bi";
+        penerangn.setText("This app is used to show random healing quotes and help you find Healing Places near you");
         textView.setText("WELCOME TO\nHEALING APP");
         Start.setText("CLICK TO START HEALING");
         bi.setVisibility(View.VISIBLE);
@@ -68,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     private void explainbm() {
-        penerangn.setText("Aplikasi ini digunakan untuk menunjukkan ayat penyembuhan rawak");
+        bahasa = "bm";
+        penerangn.setText("Aplikasi ini digunakan untuk menunjukkan quote-quote healing secara rawak dan bantu anda mencari tempat Healing berhampiran anda");
         textView.setText("SELAMAT DATANG KE\nAPLIKASI HEALING");
         Start.setText("KLIK UNTUK MULAKAN HEALING");
         bi.setVisibility(View.GONE);
