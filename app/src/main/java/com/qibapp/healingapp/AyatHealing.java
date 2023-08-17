@@ -33,38 +33,65 @@ public class AyatHealing extends AppCompatActivity {
                     "Jangan takut untuk berkata\n\"Tidak\" untuk sesuatu yang kamu tidak mahu.\n\nTak perlu mengorbankan\n" +
                     "perasaanmu sendiri demi\nmenjaga hatinya\n\nKamu tak akan mampu bertahan\ndalam kepuraan selamanya"},
             {"4","Quote 4 BI", "Quote 4 BM"}, //nym1
-            {"5","Quote 5 BI", "Quote 5 BM"}, //nmy2
+            {"5","You can cry too\nDon't be held back by that mistake.\n\nyou are just a man\nwho has a day\nYou feel sad too\n" +
+                    "when in the lowest phase\nin your life\n\nIt's okay if it's crying\nlet go of what is open\nand grow what is planted.",
+                    "Kamu juga boleh menangis\nJangan ditahan hiba itu.\n\nkamu itu cuma lelaki\nyang punya hari.\n" +
+                    "kau juga merasakan duka\ntatkala berada di fasa terendah\ndalam hidupmu.\n\nTak mengapa jika tangisan itu\n" +
+                    "melepaskan apa yang terbukam\ndan menumbuhkan apa yang tertanam."},
             {"6","The soul always knows\nwhat to do to heal itself.\n\nBut the challenge is to \nsilence the mind",
                     "Jiwa sentiasa tahu\napa yang perlu dilakukan untuk menyembuhkan dirinya sendiri.\n\nTapi cabarannya ialah\nmendiamkan fikiran"},
-            {"7","Quote 7 BI", "Quote 7 BM"}, //nym2
+            {"7","What comes can go\nthose who go can come back\n\nButterflies leave cocoons\nBirds return to the nest\n\n" +
+                    "Make sure you are ready\nface all odds\nin your life so that you don't\ntoo sick to get through the day.",
+                    "Yang datang boleh pergi\nyang pergi boleh datang kembali\n\nRama-rama tinggalkan kepompong\nBurung pula pulang ke sarang\n" +
+                    "\nPastikan kamu bersedia\nberhadapan segala kemungkinan\ndalam hidupmu agar kamu tidak\nterlalu sakit melalui hari itu."},
             {"8","Learn to be silent,\n\nBecause emotions can make us\nlost a lot of things",
-                    "Belajarlah untuk berdiam diri,\n\nKerana emosi boleh membuatkan kita\nkehilangan banyak hal"}, //internet
+                    "Belajarlah untuk berdiam diri,\n\nKerana emosi boleh membuatkan kita\nkehilangan banyak hal"},
             {"9","Quote 9 BI", "Quote 9 BM"}, //nym1
             {"10","Self-forgiveness is\nessential to self-healing",
                     "Memaafkan diri sendiri adalah\npenting untuk penyembuhan diri"},
-            {"11","Quote 11 BI", "Quote 11 BM"}, //nym2
+            {"11","Maybe there will be someone present\nin your life\nthen left without an answer\njust keep silent\n\n" +
+                    "What else are you waiting for?\nyou don't have to hurt yourself\nby waiting for the answer.\n\nHe doesn't care\n" +
+                    "He is worried about your heart\nthen for what\nare you still there?\n\nDon't hurt yourself anymore\nby waiting\n" +
+                    "You need to cut high\nI'm sure your wound will dry up later",
+                    "Mungkin akan ada yang hadir\ndalam hidupmu\nlalu pergi tanpa jawapan\nhanya diam membisu\n\n" +
+                    "Apa lagi yang kamu tunggu?\nkamu tak perlu menyakiti dirimu\ndengan menunggu jawapannya.\n\n" +
+                    "Dia tidak peduli\nDia ridak kesah soaln hatimu\nlalu untuk apa\nmasih lagi kamu disitu?\n\n" +
+                    "Jangan sakiti dirimu lagi\ndengan menanti\nKamu perlu tebang tinggi\npasti lukamu akan kering nanti"},
             {"12","Quote 12 BI", "Quote 12 BM"}, //nym1
             {"13","Quote 13 BI", "Quote 13 BM"}, //nym1
             {"14","Although the world is full of suffering,\nit is also full \nof the overcoming of it",
                     "Walaupun dunia penuh dengan penderitaan,\nia juga penuh\ndengan mengatasinya"},
-            {"15","Quote 15 BI", "Quote 15 BM"}, //nym2
-            {"16","Quote 16 BI", "Quote 16 BM"}, //nym2
+            {"15","You and him are just friends\n\nDon't you dare get your hopes up\nif you don't want to be broken.\n\nBetter to be aware\nfrom shock itself.",
+                    "Kamu dan dia cuma berkawan\n\nJangan berani menaruh harapan\njika tidak mahu dipatahkan.\n\nLebih baik sedar diri\ndaripada syok sendiri."},
+            {"16","Live, goes on.\n\nYour life does not stop\nduring the storm.\n\nLearn to be sincere\nyour every destiny because of the sincere\n" +
+                    "will always win defeat\nthe desire to give up your Lord's fast.",
+                    "Hidup, terus berjalan.\n\nHidupmu tidak terhenti\nketika badai.\n\nBelajarlah mengikhlaskan\nsetiap tekdirmu kerana yang ikhlas\n" +
+                            "akan sentiasa menang menewaskan\nkeinginan berputus asa pasa Tuhanmu."},
             {"17","Quote 17 BI", "Quote 17 BM"}, //nym1
             {"18","Healing is an art.\n\nIt takes time,\nit takes practice and\nIt takes love",
                     "Penyembuhan adalah satu seni.\n\nIa memerlukan masa,\nia memerlukan latihan dan\nia memerlukan cinta"},
-            {"19","Quote 19 BI", "Quote 19 BM"}, //nym2
+            {"19","Among the hardest things is\ndeny your own feelings\n\nyou are missing\n\nBut you deny that feeling\n" +
+                    "because you are aware of missing you\nwill not be welcomed again like before",
+                    "Antara hal terberat itu adalah\nmendustakan perasaamu sendiri\n\nKamu sedang rindu,\n\nTapi kamu menafikan rasa itu\n" +
+                    "kerana kamu sedar rindu kamu itu\ntidak akan disambut lagi seperti dulu"},
             {"20","Quote 20 BI", "Quote 20 BM"}, //nym1
             {"21","When we heal the earth,\nwe heal ourselves",
                     "Apabila kita menyembuhkan bumi,\nkita sembuhkan diri kita"},
             {"22","Quote 22 BI", "Quote 22 BM"}, //nym1
             {"23","Natural forces within us\nare the true healers\nof disease",
                     "Kekuatan semula jadi dalam diri kita\nadalah penyembuh sebenar penyakit"},
-            {"24","Quote 24 BI", "Quote 24 BM"}, //nym2
+            {"24","To clarify\nthe water should continue to flow.\n\nSo is life\nwhich should continue even if the obstacle kills hope\n\n" +
+                    "Keep going\n\nBecause happiness is always waiting for you ahead.",
+                    "Untuk menjernihkan\nair itu harus terus mengalir.\n\nBegitu juga kehidupan\nyang seharusnya diteruskan meskipun halangan itu mematikan harapan\n\n" +
+                            "Teruslah berjalan\n\nKerana bahagia sentiasa menunggumu di hadapan."},
             {"25","It has been said that time heals all wounds.\nBut the truth is that time does not heal anything.\n\n" +
                     "It merely passes.\n\nIt is what we do during the passing of time\nthat helps or hinders the healing process",
                     "Dikatakan bahawa masa menyembuhkan semua luka.\nTapi hakikatnya masa tidak menyembuhkan apa-apa.\n\n" +
                             "Ia hanya berlalu.\n\nApa yang kita lakukan\nsemasa berlalunya masa yang membantu atau menghalang proses penyembuhan"},
-            {"26","Quote 26 BI", "Quote 26 BM"}, //nym2
+            {"26","because of you\nnot grateful to have it\nGod will take it\nthat's good from you.\n\nBecause that's good\ndeserve\n" +
+                    "better than you\n\nGod will replace you\nwith someone good\nalso for him",
+                    "kerana kamu \ntidak bersyukur memilikinya\nTuhan akan ambil\nyang baik itu daripada kamu.\n\nKerana yang baik itu\n" +
+                    "layak mendapat\nyang lebih baik dari kamu.\n\nTuhan akan menggantikan kamu\ndengan seseorang yang baik\njuga untuknya"},
             {"27","Quote 27 BI", "Quote 27 BM"}, //nym1
             {"28","Quote 28 BI", "Quote 28 BM"}, //nym2
             {"29","Sometimes we look too far into happiness,\n\nAt what others achieve,\nother people have,\nother people do.\n" +
