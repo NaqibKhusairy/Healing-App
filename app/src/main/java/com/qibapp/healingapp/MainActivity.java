@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void explainbi() {
         bahasa = "bi";
-        penerangn.setText("This app is used to show 50 random healing quotes and help you find Healing Places near you");
+        penerangn.setText("This app is used to show 51 random healing quotes and help you find Healing Places near you");
         textView.setText("WELCOME TO\nHEALING APP");
         Start.setText("CLICK TO START HEALING");
         bi.setVisibility(View.VISIBLE);
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void explainbm() {
         bahasa = "bm";
-        penerangn.setText("Aplikasi ini digunakan untuk menunjukkan 50 quote-quote healing secara rawak dan bantu anda mencari tempat Healing berhampiran anda");
+        penerangn.setText("Aplikasi ini digunakan untuk menunjukkan 51 quote-quote healing secara rawak dan bantu anda mencari tempat Healing berhampiran anda");
         textView.setText("SELAMAT DATANG KE\nAPLIKASI HEALING");
         Start.setText("KLIK UNTUK MULAKAN HEALING");
         bi.setVisibility(View.GONE);

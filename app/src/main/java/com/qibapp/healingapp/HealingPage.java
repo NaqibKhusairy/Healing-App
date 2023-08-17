@@ -86,9 +86,9 @@ public class HealingPage extends AppCompatActivity {
         bi.setVisibility(View.VISIBLE);
         bm.setVisibility(View.GONE);
         Map.setText("CLICK TO SEACH HEALING PLACE NEAR YOU");
-        Healing.setText("CLICK TO READ 50 RANDOMLY HEALING QUOTES");
+        Healing.setText("CLICK TO READ 51 RANDOMLY HEALING QUOTES");
         toastmap = "Happy Finding Healing Place Near You";
-        toasthealing = "Happy Reading The Random Healing Quotes";
+        toasthealing = "Happy Reading The 51 Random Healing Quotes";
         toastBack = "Thank you For Using Healing App";
     }
 
@@ -98,9 +98,9 @@ public class HealingPage extends AppCompatActivity {
         bi.setVisibility(View.GONE);
         bm.setVisibility(View.VISIBLE);
         Map.setText("KLIK UNTUK MENCARI TEMPAT HEALING BERHAMPIRAN ANDA");
-        Healing.setText("KLIK UNTUK MEMBACA 50 QUOTE - QOUTE HEALING SECARA RAWAK");
+        Healing.setText("KLIK UNTUK MEMBACA 51 QUOTE - QOUTE HEALING SECARA RAWAK");
         toastmap = "Selamat Mencari Tempat Healing Berhampiran Anda";
-        toasthealing = "Selamat Membaca 50 Random Quotes Healing";
+        toasthealing = "Selamat Membaca 51 Random Quotes Healing";
         toastBack = "Terima Kasih Kerana Menggunakan Healing App";
     }
 }
