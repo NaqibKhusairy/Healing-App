@@ -22,13 +22,12 @@ public class AyatHealing extends AppCompatActivity {
     ImageView bm, bi, back;
     TextView text;
     MediaPlayer mediaPlayer;
-    String bahasa,backtoast,resettoast, healingBI = "", healingBM = "",BilHeling = "";
+    String bahasa,backtoast,resettoast, healingBI = "", healingBM = "",  BilHeling = "";
     String[][] quotes = {
             {"1","Healing takes courage,\n\nand we all have courage\n\neven if we have to dig a little to find it",
                     "Penyembuhan memerlukan keberanian,\n\ndan kita semua mempunyai keberanian\n\nwalaupun kita perlu menggali sedikit untuk mencarinya"},
             {"2","When God Has Decided\nit happened,\nthen that's the best\nfor you to go through.\n\nThe best for God is meaningful\n" +
-                    "it's very good and\nwill not happen\nwithout beautiful results.",
-                    "Ketika Tuhan Telah Memutuskan\nhal itu Terjadi,\nmaka itulah yang terbaik\nuntuk kamu harungi.\n\n" +
+                    "it's very good and\nwill not happen\nwithout beautiful results.", "Ketika Tuhan Telah Memutuskan\nhal itu Terjadi,\nmaka itulah yang terbaik\nuntuk kamu harungi.\n\n" +
                     "Terbaik bagu Tuhan itu bermakna\nianya sanga baik dan\ntidak akan tejadi\ntanpa natijah yang indah."},
             {"3","Don't be afraid to say\n\"No\" to something you don't want.\n\nNo need to sacrifice\nyour own feelings for\n" +
                     "take care of his heart\n\nYou will not be able to survive\nforever in shame",
@@ -51,7 +50,9 @@ public class AyatHealing extends AppCompatActivity {
                     "\nPastikan kamu bersedia\nberhadapan segala kemungkinan\ndalam hidupmu agar kamu tidak\nterlalu sakit melalui hari itu."},
             {"8","Learn to be silent,\n\nBecause emotions can make us\nlost a lot of things",
                     "Belajarlah untuk berdiam diri,\n\nKerana emosi boleh membuatkan kita\nkehilangan banyak hal"},
-            {"9","Quote 9 BI",
+            {"9","A valuable gift\ndoesn't necessarily have to be beautifully wrapped\nwithin it there is something\nprecious and meaningful.\n" +
+                    "\nSometimes that precious gift\nGod wraps it inside\nproblems, suspicions and tests.\n\nBut inside it is full of\n" +
+                    "God's blessings and love\to His servants",
                     "Hadiah yang bernilai itu\ntidak semestinya harus dibungkus indah\nyang di dalamnya terdapat sesuatu\nyang berharga dan bermakna.\n" +
                             "\nTerkadang hadiah bernilai itu\nTuhan bungkuskan di dalamnya\nmasalah, dugaan dan ujian.\n\nTetapi di dalamnya penuh dengan\n" +
                             "barakah dan kasih sayang Tuhan\nkepada hamba-Nya"},
@@ -235,7 +236,7 @@ public class AyatHealing extends AppCompatActivity {
         setContentView(R.layout.activity_ayat_healing);
 
         mediaPlayer = MediaPlayer.create(this, R.raw.song);
-        mediaPlayer.setLooping(true); // Set looping to true
+        mediaPlayer.setLooping(true);
         mediaPlayer.start();
 
         rollButton = findViewById(R.id.button);
@@ -293,7 +294,6 @@ public class AyatHealing extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
 
-        // Pause and release resources when the activity is paused
         if (mediaPlayer != null && mediaPlayer.isPlaying()) {
             mediaPlayer.pause();
         }
@@ -303,7 +303,6 @@ public class AyatHealing extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        // Resume playback when the activity is resumed
         if (mediaPlayer != null && !mediaPlayer.isPlaying()) {
             mediaPlayer.start();
         }
@@ -313,7 +312,6 @@ public class AyatHealing extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
 
-        // Release resources when the activity is destroyed
         if (mediaPlayer != null) {
             mediaPlayer.release();
             mediaPlayer = null;
@@ -353,12 +351,15 @@ public class AyatHealing extends AppCompatActivity {
         bahasa = "bi";
         bi.setVisibility(View.VISIBLE);
         bm.setVisibility(View.GONE);
-        text.setText("Healing Quote Number : "+BilHeling+"\n\n"+healingBI);
+        text.setText("\n\nHealing Quote Number : "+BilHeling+"\n\n"+healingBI);
+        if(BilHeling.equals("11")){
+            text.setText("\n\n\n\n\n\n\nHealing Quote Number : "+BilHeling+"\n\n"+healingBI);
+        }
         if(bilhealing!=0){
             rollButton.setText("CLICK TO CHANGE "+bilhealing+" RANDOMLY HEALING QUOTES");
         }
         if(bilhealing==0 || bilhealing ==51){
-            rollButton.setText("YOUR HEALING QUOTES REMAIN 0 CLICK TO RESET YOUR HEALING QUOTES");
+            rollButton.setText("YOUR HEALING QUOTES REMAIN 0\nCLICK TO RESET YOUR HEALING QUOTES");
             resettoast = "Healing Quote Reseted";
         }
         backtoast = "Healing Quote Reseted";
@@ -369,12 +370,15 @@ public class AyatHealing extends AppCompatActivity {
         bahasa = "bm";
         bi.setVisibility(View.GONE);
         bm.setVisibility(View.VISIBLE);
-        text.setText("Nombor Quotes Healing : "+BilHeling+"\n\n"+healingBM);
+        text.setText("\n\nNombor Quotes Healing : "+BilHeling+"\n\n"+healingBM);
+        if(BilHeling.equals("30")){
+            text.setText("\n\n\n\n\n\n\nNombor Quotes Healing : "+BilHeling+"\n\n"+healingBM);
+        }
         if(bilhealing!=0){
             rollButton.setText("KLIK UNTUK UBAH "+bilhealing+" QUOTE HEALING SECARA RAWAK");
         }
         if(bilhealing==0 || bilhealing ==51){
-            rollButton.setText("QUOTES HEALING ANDA TINGGAL 0 KLIK UNTUK RESET QUOTES HEALING ANDA");
+            rollButton.setText("QUOTES HEALING ANDA TINGGAL 0\nKLIK UNTUK RESET QUOTES HEALING ANDA");
             resettoast = "Quote Healing Di Reset";
         }
         backtoast = "Quote Healing Di Reset";

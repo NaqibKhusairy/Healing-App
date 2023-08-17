@@ -7,74 +7,62 @@
     android:background="@drawable/bg"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="238dp"
-        android:layout_height="183dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319"
-        app:srcCompat="@drawable/icon" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="serif-monospace"
-        android:text=""
-        android:textColor="#F9DF91"
-        android:textSize="26sp"
-        android:textStyle="bold|italic"
         android:shadowColor="#F0FFFFFF"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="10"
+        android:text=""
         android:textAlignment="center"
+        android:textColor="#F9DF91"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="serif-monospace"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
         android:text=""
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#F9DF91"
         android:textSize="26sp"
         android:textStyle="italic"
-        android:shadowColor="#ffffff"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="359dp"
+        android:layout_width="339dp"
         android:layout_height="46dp"
         android:backgroundTint="#77655157"
-        android:textColor="#FFFFFF"
         android:text=""
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.719" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.51" />
 
     <ImageView
         android:id="@+id/ivbm"
