@@ -170,7 +170,7 @@ public class AyatHealing extends AppCompatActivity {
         bahasa = "bm";
         bi.setVisibility(View.GONE);
         bm.setVisibility(View.VISIBLE);
-        text.setText("Nombor Quotes Healing : "+BilHeling+"\n"+healingBI);
+        text.setText("Nombor Quotes Healing : "+BilHeling+"\n"+healingBM);
         rollButton.setText("KLIK UNTUK UBAH "+bilhealing+" QUOTE HEALING SECARA RAWAK");
     }
 }
