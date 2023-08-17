@@ -72,7 +72,7 @@ public class AyatHealing extends AppCompatActivity {
             {"49","Quote 49 BI", "Quote 49 BM"},
             {"50","Quote 50 BI", "Quote 50 BM"}
     };
-
+    int bilhealing = quotes.length;
     List<String[]> healingQuotes = new ArrayList<>(Arrays.asList(quotes));
     Random random = new Random();
 
@@ -136,12 +136,23 @@ public class AyatHealing extends AppCompatActivity {
             BilHeling = healingInfo[0];
             healingBI = healingInfo[1];
             healingBM = healingInfo[2];
+            bilhealing--;
 
             if (bahasa.equals("bi")) {
                 explainBI();
             } else if (bahasa.equals("bm")) {
                 explainBM();
             }
+            healingQuotes.remove(randomIndex);
+
+            if(bilhealing==0){
+                healingQuotes.addAll(Arrays.asList(quotes));
+                bilhealing = 50;
+            }
+        }
+        else{
+            healingQuotes.addAll(Arrays.asList(quotes));
+            bilhealing = 50;
         }
     }
 
@@ -151,7 +162,7 @@ public class AyatHealing extends AppCompatActivity {
         bi.setVisibility(View.VISIBLE);
         bm.setVisibility(View.GONE);
         text.setText("Healing Quote Number : "+BilHeling+"\n"+healingBI);
-        rollButton.setText("CLICK TO CHANGE 50 RANDOMLY HEALING QUOTES");
+        rollButton.setText("CLICK TO CHANGE "+bilhealing+" RANDOMLY HEALING QUOTES");
     }
 
     @SuppressLint("SetTextI18n")
@@ -160,6 +171,6 @@ public class AyatHealing extends AppCompatActivity {
         bi.setVisibility(View.GONE);
         bm.setVisibility(View.VISIBLE);
         text.setText("Nombor Quotes Healing : "+BilHeling+"\n"+healingBI);
-        rollButton.setText("KLIK UNTUK UBAH 50 QUOTE HEALING SECARA RAWAK");
+        rollButton.setText("KLIK UNTUK UBAH "+bilhealing+" QUOTE HEALING SECARA RAWAK");
     }
 }
