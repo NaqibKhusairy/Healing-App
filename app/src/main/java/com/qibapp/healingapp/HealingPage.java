@@ -41,9 +41,8 @@ public class HealingPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 seach = "tempat healing near me";
-                url = "https://www.google.com/search?q=" + Uri.encode(seach);
-                Intent map = new Intent(Intent.ACTION_VIEW,Uri.parse(url));
-                Toast.makeText(getApplicationContext(),toastmap,Toast.LENGTH_SHORT).show();
+                url = "https://www.google.com/maps/search/" + Uri.encode(seach) ;
+                Intent map = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(map);
             }
         });

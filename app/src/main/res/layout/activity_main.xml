@@ -69,7 +69,7 @@
         android:layout_height="46dp"
         android:backgroundTint="#77655157"
         android:textColor="#FFFFFF"
-        android:text="CLICK TO START HEALING"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
