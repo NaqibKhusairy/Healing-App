@@ -37,7 +37,7 @@
             android:fontFamily="serif-monospace"
             android:foregroundGravity="clip_horizontal|center"
             android:gravity="center|center_horizontal"
-            android:shadowColor="#ffffff"
+            android:shadowColor="#000000"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="10"
